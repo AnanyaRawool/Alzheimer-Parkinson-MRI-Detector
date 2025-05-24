@@ -14,6 +14,7 @@ Run app.py to start the Flask development server.
 Open http://localhost:8080 in your browser to use the app.
 
 **File Structure**
+```
 alzheimer-parkinson-detector/
 ├── app.py                     # Main Flask server
 ├── model/
@@ -25,3 +26,4 @@ alzheimer-parkinson-detector/
 ├── templates/
 │   └── index.html             # Frontend HTML template
 └── README.md
+```
