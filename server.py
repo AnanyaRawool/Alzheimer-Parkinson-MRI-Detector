@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app) 
 
 # Load your model
-model = tf.keras.models.load_model('alzheimer_disease_prediction_model.keras')
+model = tf.keras.models.load_model('prediction_model.keras')
 
 # Preprocess the uploaded image
 def preprocess_image(image_bytes):
