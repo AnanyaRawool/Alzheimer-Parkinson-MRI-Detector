@@ -11,20 +11,19 @@ The main server logic is in server.py
 ```
 Clone the repository and navigate into it.
 Install the required dependencies using pip install (pip install tensorflow and pip install tensorflow flask pillow numpy).
-Run app.py to start the Flask development server.
+Run server.py to start the Flask development server.
 Open http://localhost:8080 in your browser to use the app.
 ```
 **File Structure**
 ```
 alzheimer-parkinson-detector/
-├── app.py                     # Main Flask server
-├── model/
-│   └── alzheimer_disease_prediction_model.keras
+├── server.py                      # Flask server handling upload and prediction
+├── alzheimer_disease_prediction_model.keras  # Trained model file
 ├── static/
-
-│   ├── style.css              # Custom CSS styles
-│   └── script.js              # JS for form handling and fetch API
+│   ├── style.css               # Custom styles for UI
+│   └── script.js               # JavaScript for frontend functionality
 ├── templates/
-│   └── index.html             # Frontend HTML template
+│   └── index.html              # Frontend interface
 └── README.md
+
 ```
