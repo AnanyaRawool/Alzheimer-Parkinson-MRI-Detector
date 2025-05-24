@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Brain Disease Prediction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🧠 Brain Disease Predictor</h1>
+      <p class="subtitle">Upload an MRI scan to detect Alzheimer’s, Parkinson’s, or Normal</p>
+    </header>
+
+    <form id="upload-form" enctype="multipart/form-data">
+      <input type="file" name="file" id="file-input" accept="image/*" required />
+      <button type="submit">🧪 Predict</button>
+    </form>
+
+    <div id="result" class="result-box"></div>
+  </div>
+</body>
+</html>
